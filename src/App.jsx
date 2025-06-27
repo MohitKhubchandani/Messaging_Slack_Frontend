@@ -1,13 +1,16 @@
 import './App.css';
 
-import { Button } from '@/components/ui/button';
+import { Route, Routes } from 'react-router-dom';
+
+import { Auth } from './pages/Auth/auth';
+
 
 function App() {
 
   return (
-    <>
-    <Button>Shad Button</Button>
-    </>
+    <Routes>
+      <Route path='/auth' element={<Auth/> }/>
+    </Routes>
   );
 }
 
